@@ -5,9 +5,8 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private Animator animator;
-    private int demage;
-    private int health;
-    private float attackSpeed;
+    public BulletInfo bullet;
+    public ObjectInfo character;
 
     // Start is called before the first frame update
     void Start()
