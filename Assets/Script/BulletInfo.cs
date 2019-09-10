@@ -9,10 +9,4 @@ public class BulletInfo : ScriptableObject
     public BulletTypes type;
     public Sprite bulletImage;
     public float speed;
-
-    public ObjectInfo OnDemage(ObjectInfo obj)
-    {
-        obj.health = Mathf.Max(obj.health - demage, 0);
-        return obj;
-    }
 }
