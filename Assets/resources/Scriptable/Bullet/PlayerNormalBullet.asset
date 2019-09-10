@@ -15,4 +15,4 @@ MonoBehaviour:
   demage: 10
   type: 1
   bulletImage: {fileID: 21300000, guid: a57db5036a1df7640b73d24459300607, type: 3}
-  speed: 10
+  speed: 20
