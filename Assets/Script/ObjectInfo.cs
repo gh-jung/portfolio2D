@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "ObjectInfo", menuName = "GameObj/ObjectInfo", order = 1)]
 public class ObjectInfo : ScriptableObject
 {
     public int health;
-    //public Bullet bullet;
+    public BulletInfo bullet;
     public float attackSpeed;
 
     public bool Alive
@@ -27,5 +28,10 @@ public class ObjectInfo : ScriptableObject
         {
             attackSpeed *= value;
         }
+    }
+
+    public void SetAttackSpeed(float speed)
+    {
+        attackSpeed = speed;
     }
 }
