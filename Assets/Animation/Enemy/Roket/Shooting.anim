@@ -35,7 +35,7 @@ AnimationClip:
       value: {fileID: -4947294028930164896, guid: 740af4bb7e9429b49983ec0aaa381d15,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: AllBody
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 10
@@ -46,7 +46,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 104501070
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -82,4 +82,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.2
+    functionName: Shooting
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
