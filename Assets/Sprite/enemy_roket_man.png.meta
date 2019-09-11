@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: 740af4bb7e9429b49983ec0aaa381d15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5196663581002718421
+    second: enemy_roket_man_0
+  - first:
+      213: 5367962471940849742
+    second: enemy_roket_man_1
+  - first:
+      213: 4516945107392924806
+    second: enemy_roket_man_2
+  - first:
+      213: 7407026252012826860
+    second: enemy_roket_man_3
+  - first:
+      213: 3530019920385820693
+    second: enemy_roket_man_4
+  - first:
+      213: -3654738434211163003
+    second: enemy_roket_man_5
+  - first:
+      213: -8135946324043446187
+    second: enemy_roket_man_6
+  - first:
+      213: -5698325869194284689
+    second: enemy_roket_man_7
+  - first:
+      213: -3167219499532093907
+    second: enemy_roket_man_8
+  - first:
+      213: -3294572832873439427
+    second: enemy_roket_man_9
+  - first:
+      213: 4551676051717587762
+    second: enemy_roket_man_10
+  - first:
+      213: -8582505689729149058
+    second: enemy_roket_man_11
+  - first:
+      213: 5977887509713581682
+    second: enemy_roket_man_12
+  - first:
+      213: 6767522207436020152
+    second: enemy_roket_man_13
+  - first:
+      213: -6230245107384728906
+    second: enemy_roket_man_14
+  - first:
+      213: -8670182317742529001
+    second: enemy_roket_man_15
+  - first:
+      213: 8048527933396292764
+    second: enemy_roket_man_16
+  - first:
+      213: -4793206091584989649
+    second: enemy_roket_man_17
+  - first:
+      213: -8741554877329812298
+    second: enemy_roket_man_18
+  - first:
+      213: 1530510971013653404
+    second: enemy_roket_man_19
+  - first:
+      213: -5278411118612000349
+    second: enemy_roket_man_20
+  - first:
+      213: -605995613394030956
+    second: enemy_roket_man_21
+  - first:
+      213: 4990142232322152117
+    second: enemy_roket_man_22
+  - first:
+      213: -1091469453406477257
+    second: enemy_roket_man_23
+  - first:
+      213: 9093889024986905999
+    second: enemy_roket_man_24
+  - first:
+      213: 5440740269649939189
+    second: enemy_roket_man_25
+  - first:
+      213: -7747685109003146066
+    second: enemy_roket_man_26
+  - first:
+      213: 4654578078734767124
+    second: enemy_roket_man_27
+  - first:
+      213: -4716054287732204819
+    second: enemy_roket_man_28
+  - first:
+      213: -1673402400670101475
+    second: enemy_roket_man_29
+  - first:
+      213: -1234704437301500741
+    second: enemy_roket_man_30
+  - first:
+      213: 5921866876565375762
+    second: enemy_roket_man_31
+  - first:
+      213: 776220327821967030
+    second: enemy_roket_man_32
+  - first:
+      213: -3399231851351948683
+    second: enemy_roket_man_33
+  - first:
+      213: 6918857170239261071
+    second: enemy_roket_man_34
+  - first:
+      213: -1387402742101750388
+    second: enemy_roket_man_35
+  - first:
+      213: -4947294028930164896
+    second: enemy_roket_man_36
+  - first:
+      213: 3327158609114129950
+    second: enemy_roket_man_37
+  - first:
+      213: 1022957387487804137
+    second: enemy_roket_man_38
+  - first:
+      213: 3809178490449490236
+    second: enemy_roket_man_39
+  - first:
+      213: 4901473397478471367
+    second: enemy_roket_man_40
+  - first:
+      213: 6507908750419730320
+    second: enemy_roket_man_41
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy_roket_man_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 36
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1f5661abedb9b4589052916a2ec5d3
+      internalID: -5196663581002718421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 238
+        width: 38
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a366a4b59b301a4ca388017928ca993
+      internalID: 5367962471940849742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 238
+        width: 38
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e2a653b60451e4697562784652d38d
+      internalID: 4516945107392924806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 238
+        width: 36
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b492a5057805af48950d7645d52a72d
+      internalID: 7407026252012826860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 238
+        width: 38
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8d5d95c92d549489fcf48e4459a8b4
+      internalID: 3530019920385820693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 238
+        width: 38
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0c6a71d40b3eb49bbd675f3b2acd42
+      internalID: -3654738434211163003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47bd5dca06ffdd42a0713797529d9a5
+      internalID: -8135946324043446187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 192
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e7e60017c9a8f448b022fa8dfc1de8
+      internalID: -5698325869194284689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 193
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a68945057221c340aa0ff626118c2c0
+      internalID: -3167219499532093907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 193
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9f2b985a70b244fb17fc0e2a290c76
+      internalID: -3294572832873439427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_10
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 192
+        width: 40
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b56406df0a0f0a45832a338eca1e722
+      internalID: 4551676051717587762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_11
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 192
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42fb49550880ec48ae9c08e907fe29e
+      internalID: -8582505689729149058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 192
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fb17fd2eda305458ff02aa09662c02
+      internalID: 5977887509713581682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_13
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 192
+        width: 38
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a7b4bdd4a4b3945a764ae14cb26a90
+      internalID: 6767522207436020152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_14
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 193
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0251c9d598619ad45bccc2e605a275ee
+      internalID: -6230245107384728906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 193
+        width: 36
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd704ce051b540a418aa44e51a9439f7
+      internalID: -8670182317742529001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 192
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaa3a481515c44458b02941826ba0a6
+      internalID: 8048527933396292764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256ece748e5fe394081971a483c74e84
+      internalID: -4793206091584989649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_18
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 144
+        width: 38
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cbe9813b0978f4c92719072b25e2e4
+      internalID: -8741554877329812298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_19
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 144
+        width: 38
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aee62a0530069c4797a19a7af9f1e38
+      internalID: 1530510971013653404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 144
+        width: 37
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c0c046161c7f4e82ab673a088556d
+      internalID: -5278411118612000349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_21
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 144
+        width: 36
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb3532d87a2cdf45b56fa1bd5b21dbc
+      internalID: -605995613394030956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 36
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38758ae6063327d41b4261c25816c220
+      internalID: 4990142232322152117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_23
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 94
+        width: 35
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf8561a4ad82841b881a09dea6fe1d
+      internalID: -1091469453406477257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 94
+        width: 33
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97927d75ebeb20489a46b0504066de1
+      internalID: 9093889024986905999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_25
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 94
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab3cff9c826a894e97fc4e66d405034
+      internalID: 5440740269649939189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_26
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 94
+        width: 35
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140f173eee189d14fad66f9bea10a5bb
+      internalID: -7747685109003146066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_27
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 94
+        width: 36
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46afeb6830449614eb2e2e8af7ffd18c
+      internalID: 4654578078734767124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be2f7e988318cc40968dcd02fa0b636
+      internalID: -4716054287732204819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_29
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 43
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd8049d10041f24993cb3fb00acd218
+      internalID: -1673402400670101475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_30
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 48
+        width: 43
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38808b591a77804586a583178ed180a
+      internalID: -1234704437301500741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 50
+        width: 43
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcdec60f0f523a4980f9d84745a3f79
+      internalID: 5921866876565375762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_32
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 53
+        width: 42
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e540fa9dab60ed49a807fcafcba0039
+      internalID: 776220327821967030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_33
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 54
+        width: 40
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bde2588c56fdb4f90b51fb847b5613
+      internalID: -3399231851351948683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_34
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 48
+        width: 38
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d766f773134b6d448bce64741e39345
+      internalID: 6918857170239261071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_35
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 48
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74874c8b98ca8cf429c9d460e7f94eee
+      internalID: -1387402742101750388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 39
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa0e4efe969bf34cb8a6afaa8cf85cc
+      internalID: -4947294028930164896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5499bcbaf616d45b85c0add93b7c6e
+      internalID: 3327158609114129950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_38
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f744372dbc06d40b088e1041780aba
+      internalID: 1022957387487804137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_39
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 44
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3740503c638ab419ac314808c5e233
+      internalID: 3809178490449490236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_40
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 42
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63035ba14876ce74480ae9f840044605
+      internalID: 4901473397478471367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_roket_man_41
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 42
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad79faadd67114f864ebd34f9f2c8a
+      internalID: 6507908750419730320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 171213dc7ba30fb458f724679b2e8845
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
