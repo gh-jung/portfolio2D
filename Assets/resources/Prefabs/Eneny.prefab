@@ -338,6 +338,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   character: {fileID: 0}
   bulletInitPos: {fileID: 839848368204286977}
+  currentPos: 0
 --- !u!1 &5374957716106599328
 GameObject:
   m_ObjectHideFlags: 0

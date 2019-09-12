@@ -15,3 +15,4 @@ MonoBehaviour:
   health: 100
   bullet: {fileID: 11400000, guid: 4d863733af282724bbc1ac5cd22b484f, type: 2}
   attackSpeed: 1
+  overrideController: {fileID: 22100000, guid: ffbf51a1fbff9bf489f0dc36c005d62f, type: 2}
