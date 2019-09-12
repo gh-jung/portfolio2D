@@ -16,6 +16,7 @@ public class BulletController : MonoBehaviour
     }
 
     //총알 생성 시 반드시 호출 필요
+    //총알에 이미지가 여러장일경우 애니메이션 동작하도록 수정
     public void SetBulletInfo(BulletInfo info, int destinationPos)
     {
         this.info = Instantiate(info);
@@ -23,11 +24,11 @@ public class BulletController : MonoBehaviour
 
         mRenderer = GetComponent<SpriteRenderer>();
         mCollider = GetComponent<BoxCollider2D>();
-        mRenderer.sprite = info.bulletImage;
-        mCollider.size = new Vector2(info.bulletImage.rect.width / GameManager.SIZE_X, info.bulletImage.rect.height / GameManager.SIZE_Y);
+        mRenderer.sprite = info.bulletImages[0];
+        mCollider.size = new Vector2(info.bulletImages[0].rect.width / GameManager.SIZE_X, info.bulletImages[0].rect.height / GameManager.SIZE_Y);
     }
 
-    public ObjectInfo OnDemage(ObjectInfo obj)
+    protected ObjectInfo OnDemage(ObjectInfo obj)
     {
         obj.health = Mathf.Max(obj.health - info.demage, 0);
         return obj;

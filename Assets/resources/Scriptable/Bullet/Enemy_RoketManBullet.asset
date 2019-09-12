@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf882b673bfe6614e8ffd05ad4e56293, type: 3}
+  m_Name: Enemy_RoketManBullet
+  m_EditorClassIdentifier: 
+  demage: 0
+  type: -1
+  bulletImages:
+  - {fileID: -4418652407740737428, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
+  - {fileID: -4570636730498912028, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
+  - {fileID: 1554739709401105749, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
+  - {fileID: -4802926394792838607, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
+  speed: 0

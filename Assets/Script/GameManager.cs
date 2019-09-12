@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public static int SIZE_X = 20;
-    public static int SIZE_Y = 20;
-    public static string PLAYER = "Characters/player";
-    public static string BULLET_PATH = "Prefabs/bullet";
+    public const int SIZE_X = 20;
+    public const int SIZE_Y = 20;
+    public const string PLAYER = "Characters/player";
+    public const string ENEMY_ROCKET_MAN = "Characters/Enemy_Roket_Man";
+    public const string BULLET_PATH = "Prefabs/bullet";
 
-    public ObjectInfo GetScriptable(string obj)
+
+    public ObjectInfo LoadScriptable(string obj)
     {
         ObjectInfo temp = Resources.Load("Scriptable/" + obj) as ObjectInfo;
         return temp;
+    }
+
+    public GameObject LoadBullet(string path) 
+    {
+        return Instantiate(Resources.Load(GameManager.BULLET_PATH) as GameObject);
     }
 }

@@ -2,23 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerController : ObjectController, IBulletShooting
 {
-    private Animator animator;
-
-    public BulletInfo bullet;
-    public ObjectInfo character;
-    public Transform bulletInitPos;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        ObjectInfo tempInfo = GameManager.Instance.GetScriptable(GameManager.PLAYER);
-        if (tempInfo != null)
-        {
-            character = Instantiate(tempInfo);
-            bullet = character.bullet;
-        }
+        InitObj(GameManager.PLAYER);
     }
 
     // Update is called once per frame
@@ -32,8 +21,7 @@ public class PlayerManager : MonoBehaviour
     //공격하는 타일은 공격중임을 나타내는 이미지가 나오도록 수정
     public void Shooting()
     {
-        var tempGo = Resources.Load(GameManager.BULLET_PATH) as GameObject;
-        GameObject go = Instantiate(tempGo);
+        GameObject go = GameManager.Instance.LoadBullet(GameManager.BULLET_PATH);
         go.transform.position = bulletInitPos.position;
         go.GetComponent<BulletController>().SetBulletInfo(bullet, 0);
     }

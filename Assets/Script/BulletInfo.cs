@@ -7,6 +7,6 @@ public class BulletInfo : ScriptableObject
 {
     public int demage;
     public BulletTypes type;
-    public Sprite bulletImage;
+    public Sprite[] bulletImages;
     public float speed;
 }
