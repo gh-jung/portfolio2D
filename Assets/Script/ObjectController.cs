@@ -9,6 +9,8 @@ public class ObjectController : MonoBehaviour
     public BulletInfo bullet;
     public ObjectInfo character;
     public Transform bulletInitPos;
+    public ObjectTypes state;
+    public int currentPos;
 
     protected void InitObj(string path)
     {

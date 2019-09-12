@@ -5,5 +5,6 @@ using UnityEngine;
 //총알 발사 메서드
 public interface IBulletShooting
 {
-    void Shooting();
+    IEnumerator Shooting();
+    void Idle();
 }
