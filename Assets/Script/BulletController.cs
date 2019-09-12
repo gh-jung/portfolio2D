@@ -24,7 +24,15 @@ public class BulletController : MonoBehaviour
 
         mRenderer = GetComponent<SpriteRenderer>();
         mCollider = GetComponent<BoxCollider2D>();
-        mRenderer.sprite = info.bulletImages[0];
+
+        if(info.bulletImages.Length > 1)
+        {
+            StartCoroutine(ChangeSprite());
+        }
+        else
+        {
+            mRenderer.sprite = info.bulletImages[0];
+        }
         mCollider.size = new Vector2(info.bulletImages[0].rect.width / GameManager.SIZE_X, info.bulletImages[0].rect.height / GameManager.SIZE_Y);
     }
 
@@ -32,5 +40,17 @@ public class BulletController : MonoBehaviour
     {
         obj.health = Mathf.Max(obj.health - info.demage, 0);
         return obj;
+    }
+
+    IEnumerator ChangeSprite()
+    {
+        int i = 0;
+        int length = info.bulletImages.Length;
+        while (gameObject)
+        {
+            mRenderer.sprite = info.bulletImages[i];
+            i = (i + 1) % length;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
