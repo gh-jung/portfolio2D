@@ -16,10 +16,9 @@ public class EnemyController : ObjectController, IBulletShooting
     // Update is called once per frame
     void Update()
     {
-        currentTime += Time.deltaTime;
-
         if (state == ObjectTypes.IDLE)
         {
+            currentTime += Time.deltaTime;
             if (currentTime > character.AttackSpeed)
             {
                 state = ObjectTypes.SHOOTING;

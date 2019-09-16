@@ -8,6 +8,8 @@ public class PlayerController : ObjectController, IBulletShooting
     void Start()
     {
         InitObj(GameManager.PLAYER);
+        state = ObjectTypes.SHOOTING;
+        animator.SetTrigger("Attack");
     }
 
     // Update is called once per frame
