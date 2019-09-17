@@ -15,7 +15,7 @@ public class ObjectController : MonoBehaviour
     protected void InitObj(string path)
     {
         animator = GetComponent<Animator>();
-        ObjectInfo tempInfo = GameManager.Instance.LoadScriptable(path);
+        ObjectInfo tempInfo = GameManager.LoadScriptable(path);
         if (tempInfo != null)
         {
             character = Instantiate(tempInfo);

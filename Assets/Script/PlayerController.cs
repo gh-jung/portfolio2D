@@ -24,7 +24,7 @@ public class PlayerController : ObjectController, IBulletShooting
     IEnumerator IBulletShooting.Shooting()
     {
         yield return null;
-        GameObject go = GameManager.Instance.LoadBullet(GameManager.BULLET_PATH);
+        GameObject go = GameManager.LoadBullet(GameManager.BULLET_PATH);
         go.transform.position = bulletInitPos.position;
         go.GetComponent<BulletController>().SetBulletInfo(bullet, 0);
     }

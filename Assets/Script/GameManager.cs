@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,13 +12,13 @@ public class GameManager : Singleton<GameManager>
     public const string BULLET_PATH = "Prefabs/bullet";
 
 
-    public ObjectInfo LoadScriptable(string obj)
+    public static ObjectInfo LoadScriptable(string obj)
     {
         ObjectInfo temp = Resources.Load("Scriptable/" + obj) as ObjectInfo;
         return temp;
     }
 
-    public GameObject LoadBullet(string path) 
+    public static GameObject LoadBullet(string path) 
     {
         return Instantiate(Resources.Load(GameManager.BULLET_PATH) as GameObject);
     }

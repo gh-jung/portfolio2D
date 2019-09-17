@@ -33,7 +33,7 @@ public class EnemyController : ObjectController, IBulletShooting
         animator.speed = 0;
         yield return new WaitForSeconds(0.3f);
         animator.speed = 1;
-        GameObject go = GameManager.Instance.LoadBullet(GameManager.BULLET_PATH);
+        GameObject go = GameManager.LoadBullet(GameManager.BULLET_PATH);
         go.transform.position = bulletInitPos.position;
         go.GetComponent<BulletController>().SetBulletInfo(bullet, 0);
     }
