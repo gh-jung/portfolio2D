@@ -16,14 +16,17 @@ public class PlayerTile : MonoBehaviour
         tileNumber = int.Parse(gameObject.name);
     }
 
-    //플레이어 이동 구현 필요(애니메이션 점프)
-    //공격 중일때만 가능하도록 수정
     public void OnClickTile(Image image)
     {
+        if (player.state != ObjectTypes.ATTACK)
+            return;
+
         player.currentPos = tileNumber;
         Vector3 newPos = transform.position;
         newPos.z = player.transform.position.z;
-        player.transform.position = newPos;
+        //플레이어 무브구현
+        //player.transform.position = newPos;
+        player.OnMove(newPos);
 
         Color newColor = Color.black;
         Color oldColor = Color.black;
@@ -44,4 +47,6 @@ public class PlayerTile : MonoBehaviour
         image.color = newColor;
         TileManager.Instance.UnSelectTile(tileNumber);
     }
+
+
 }

@@ -21,7 +21,7 @@ public class EnemyController : ObjectController, IBulletShooting
             currentTime += Time.deltaTime;
             if (currentTime > character.AttackSpeed)
             {
-                state = ObjectTypes.SHOOTING;
+                state = ObjectTypes.ATTACK;
                 animator.SetTrigger("Attack");
                 currentTime = 0;
             }

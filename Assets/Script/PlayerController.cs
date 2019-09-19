@@ -8,8 +8,7 @@ public class PlayerController : ObjectController, IBulletShooting
     void Start()
     {
         InitObj(GameManager.PLAYER);
-        state = ObjectTypes.SHOOTING;
-        animator.SetTrigger("Attack");
+        Attack();
     }
 
     // Update is called once per frame
@@ -29,9 +28,55 @@ public class PlayerController : ObjectController, IBulletShooting
         go.GetComponent<BulletController>().SetBulletInfo(bullet, 0);
     }
 
+    IEnumerator Move(Vector3 newPos)
+    {
+        float distance = Vector3.Distance(transform.position, newPos);
+        if(transform.position.x > newPos.x)
+        {
+            Quaternion temp = Quaternion.identity;
+            temp.y = 180;
+            transform.rotation = temp;
+        }
+        float moveSpeed = Time.deltaTime;
+        while(distance > 0.1f)
+        {
+            yield return null;
+            transform.position = Vector3.Lerp(transform.position, newPos, moveSpeed);
+            moveSpeed += Time.deltaTime;
+            distance = Vector3.Distance(transform.position, newPos);
+        }
+
+        transform.position = newPos;
+        transform.rotation = Quaternion.identity;
+        Attack();
+    }
+
+    public void OnMove(Vector3 newPos)
+    {
+        StartCoroutine(Move(newPos));
+    }
+
     public void Idle()
     {
         state = ObjectTypes.IDLE;
         animator.SetTrigger("Idle");
+    }
+
+    public void Jump()
+    {
+        state = ObjectTypes.JUMP;
+        animator.SetTrigger("Jump");
+    }
+
+    public void Run()
+    {
+        state = ObjectTypes.RUN;
+        animator.SetTrigger("Run");
+    }
+
+    public void Attack()
+    {
+        state = ObjectTypes.ATTACK;
+        animator.SetTrigger("Attack");
     }
 }
