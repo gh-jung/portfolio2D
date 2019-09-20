@@ -39,8 +39,8 @@ public abstract class Tile : MonoBehaviour
 
         oldColor.a = newColor.a = TileManager.TILE_ALPHA;
 
-        TileManager.ConvertStringToColor(oldTile, ref oldColor);
-        TileManager.ConvertStringToColor(newTile, ref newColor);
+        TileManager.SetColorToHexRGB(oldTile, ref oldColor);
+        TileManager.SetColorToHexRGB(newTile, ref newColor);
 
         image.color = newColor;
         TileManager.Instance.UnSelectTile(tileNumber, oldColor, type);
