@@ -2,29 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//충돌 판정 델리게이트
+public delegate ImpuseReturnValue Impuse();
+
 public class BulletController : MonoBehaviour
 {
     public BulletInfo info;
     private SpriteRenderer mRenderer;
     private BoxCollider2D mCollider;
-    private int destinationPos;// 공격할 타일
-
+    private event Impuse impuseEvent;
+    private float destinationX;
+    public int DestinationTile
+    {
+        get; set;
+    }
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.right * (int)info.type * info.speed * Time.deltaTime);
+
+        if (info.type == BulletTypes.PLAYER && transform.position.x > destinationX)
+        {
+            //데미지를 받아서 인식 하는 부분도 이벤트로 처리
+            //GameManager.Instance.OnDamage(this);
+            Destroy(this.gameObject);
+        }
+        else if(info.type == BulletTypes.EMENY && transform.position.x < destinationX)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     //총알 생성 시 반드시 호출 필요
-    //총알에 이미지가 여러장일경우 애니메이션 동작하도록 수정
-    public void SetBulletInfo(BulletInfo info, int destinationPos)
+    //플레이어 적 모두 적용가능하도록 수정 필요
+    public void SetBulletInfo(BulletInfo mInfo, Impuse bulletImpuse)
     {
-        this.info = Instantiate(info);
-        this.destinationPos = destinationPos;
+        info = Instantiate(mInfo);
+        impuseEvent = bulletImpuse;
+        ImpuseReturnValue tempValue = impuseEvent();
+
+        DestinationTile = tempValue.destinationTile;
+        destinationX = tempValue.destinationPosX;
 
         mRenderer = GetComponent<SpriteRenderer>();
-        mCollider = GetComponent<BoxCollider2D>();
 
+        //애니메이션 동작 추가
         if(info.bulletImages.Length > 1)
         {
             StartCoroutine(ChangeSprite());
@@ -33,7 +55,8 @@ public class BulletController : MonoBehaviour
         {
             mRenderer.sprite = info.bulletImages[0];
         }
-        mCollider.size = new Vector2(info.bulletImages[0].rect.width / GameManager.SIZE_X, info.bulletImages[0].rect.height / GameManager.SIZE_Y);
+
+        Debug.Log(DestinationTile);
     }
 
     protected ObjectInfo OnDemage(ObjectInfo obj)

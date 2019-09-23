@@ -23,4 +23,10 @@ public class ObjectController : MonoBehaviour
         }
         animator.runtimeAnimatorController = character.overrideController;
     }
+
+    public void OnDemage(BulletInfo bulletInfo)
+    {
+        character.health = Mathf.Clamp(character.health - bulletInfo.demage, 0, character.health - bulletInfo.demage);
+        Debug.Log(character.health);
+    }
 }

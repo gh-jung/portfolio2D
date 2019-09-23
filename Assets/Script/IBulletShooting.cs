@@ -6,5 +6,5 @@ using UnityEngine;
 public interface IBulletShooting
 {
     IEnumerator Shooting();
-    void Idle();
+    ImpuseReturnValue Impuse();
 }

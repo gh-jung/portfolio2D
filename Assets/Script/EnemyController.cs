@@ -28,6 +28,21 @@ public class EnemyController : ObjectController, IBulletShooting
         }
     }
 
+    public void Idle()
+    {
+        state = ObjectTypes.IDLE;
+        animator.SetTrigger("Idle");
+    }
+
+    public ImpuseReturnValue Impuse()
+    {
+        ImpuseReturnValue returnValue;
+        returnValue.destinationPosX = GameManager.SCREEN_LEFT;
+        returnValue.destinationTile = currentPos / 3;
+
+        return returnValue;
+    }
+
     IEnumerator IBulletShooting.Shooting()
     {
         animator.speed = 0;
@@ -35,12 +50,6 @@ public class EnemyController : ObjectController, IBulletShooting
         animator.speed = 1;
         GameObject go = GameManager.LoadBullet(GameManager.BULLET_PATH);
         go.transform.position = bulletInitPos.position;
-        go.GetComponent<BulletController>().SetBulletInfo(bullet, 0);
-    }
-
-    public void Idle()
-    {
-        state = ObjectTypes.IDLE;
-        animator.SetTrigger("Idle");
+        go.GetComponent<BulletController>().SetBulletInfo(bullet, Impuse);
     }
 }
