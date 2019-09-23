@@ -10,14 +10,12 @@ public class PlayerTile : Tile
     {
         base.OnClickTile(image);
 
-        if (player.state != ObjectTypes.ATTACK)
+        if (player.state == ObjectTypes.RUN)
             return;
 
         player.currentPos = tileNumber;
         Vector3 newPos = transform.position;
         newPos.z = player.transform.position.z;
         player.OnMove(newPos);
-
-
     }
 }

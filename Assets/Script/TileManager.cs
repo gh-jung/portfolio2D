@@ -15,15 +15,35 @@ public class TileManager : Singleton<TileManager>
     private const float MAX_COLOR_VALUE = 255;
     private const int NOT_INIT = -1;
 
+    public PlayerTile[] playerMoveAbleTiles;
+    public EnemyTile[] enemyMoveAbleTiles;
     public Image[] playerTiles;
     public Image[] enemyTiles;
 
-    private int playerPos = -1;
-    private int SelectEnemyPos = -1;
+    private int playerPos = 6;
+    private int selectEnemyPos = -1;
+
+    public int PlayerPos
+    {
+        get
+        {
+            return playerPos;
+        }
+    }
+
+    public int SelectEnemyPos
+    {
+        get
+        {
+            return selectEnemyPos;
+        }
+    }
+
+    //적이 여러마리일때의 타일 배치 구현
 
     private void OnTileColorChange(int number, Color color, ref int targetTileNumber, ref Image[] targetTileArray)
     {
-        if (targetTileNumber <= NOT_INIT)
+        if (targetTileNumber <= NOT_INIT || targetTileNumber == number)
         {
             targetTileNumber = number;
             return;
@@ -32,7 +52,6 @@ public class TileManager : Singleton<TileManager>
         targetTileNumber = number;
     }
 
-    //적 타일 클릭 후 플레이어 타일도 바뀌는지 여부추가 
     public void UnSelectTile(int newNumber,Color oldColor, TileTypes type)
     {
         if (type == TileTypes.PLAYER_TILE)
@@ -41,7 +60,7 @@ public class TileManager : Singleton<TileManager>
         }
         else
         {
-            OnTileColorChange(newNumber, oldColor, ref SelectEnemyPos, ref enemyTiles);
+            OnTileColorChange(newNumber, oldColor, ref selectEnemyPos, ref enemyTiles);
         }
     }
 
@@ -50,5 +69,42 @@ public class TileManager : Singleton<TileManager>
         color.r = Convert.ToInt32(hexColorString.Substring(0, 2), 16) / MAX_COLOR_VALUE;
         color.g = Convert.ToInt32(hexColorString.Substring(2, 2), 16) / MAX_COLOR_VALUE;
         color.b = Convert.ToInt32(hexColorString.Substring(4, 2), 16) / MAX_COLOR_VALUE;
+    }
+
+    public bool IsSameLine()
+    {
+        return (playerPos / 4) == (selectEnemyPos / 3);
+    }
+
+    public void SetMovePlay()
+    {
+        Debug.Log((playerPos / 4) + ", " + (selectEnemyPos / 3));
+        int difference = playerPos + ((selectEnemyPos / 3) - (playerPos / 4)) * 4;
+        playerMoveAbleTiles[difference].OnClickTile(playerTiles[difference]);
+    }
+
+    public void SetPlayerPos(GameObject player)
+    {
+        int index = playerPos;
+        player.GetComponent<ObjectController>().currentPos = index;
+        player.transform.position = playerMoveAbleTiles[index].transform.position;
+
+        Color newColor = Color.black;
+        newColor.a = TILE_ALPHA;
+        SetColorToHexRGB(PLAYER_SELLECT_TILE, ref newColor);
+        playerTiles[index].color = newColor;
+    }
+
+    public void SetEnemyPos(GameObject enemy)
+    {
+        int index = selectEnemyPos;
+        enemy.GetComponent<ObjectController>().currentPos = index;
+
+        enemy.transform.position = enemyMoveAbleTiles[index].transform.position;
+
+        Color newColor = Color.black;
+        newColor.a = TILE_ALPHA;
+        SetColorToHexRGB(ENEMY_SELLECT_TILE, ref newColor);
+        enemyTiles[index].color = newColor;
     }
 }
