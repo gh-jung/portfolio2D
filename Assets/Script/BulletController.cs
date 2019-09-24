@@ -9,7 +9,6 @@ public class BulletController : MonoBehaviour
 {
     public BulletInfo info;
     private SpriteRenderer mRenderer;
-    private BoxCollider2D mCollider;
     private event Impuse impuseEvent;
     private float destinationX;
     public int DestinationTile
@@ -21,14 +20,11 @@ public class BulletController : MonoBehaviour
     {
         transform.Translate(Vector3.right * (int)info.type * info.speed * Time.deltaTime);
 
-        if (info.type == BulletTypes.PLAYER && transform.position.x > destinationX)
+        if (info.type == BulletTypes.PLAYER && transform.position.x > destinationX ||
+            info.type == BulletTypes.EMENY && transform.position.x < destinationX)
         {
             //데미지를 받아서 인식 하는 부분도 이벤트로 처리
             //GameManager.Instance.OnDamage(this);
-            Destroy(this.gameObject);
-        }
-        else if(info.type == BulletTypes.EMENY && transform.position.x < destinationX)
-        {
             Destroy(this.gameObject);
         }
     }
@@ -45,9 +41,9 @@ public class BulletController : MonoBehaviour
         destinationX = tempValue.destinationPosX;
 
         mRenderer = GetComponent<SpriteRenderer>();
+        BoxCollider2D mCollider = GetComponent<BoxCollider2D>();
 
-        //애니메이션 동작 추가
-        if(info.bulletImages.Length > 1)
+        if (info.bulletImages.Length > 1)
         {
             StartCoroutine(ChangeSprite());
         }
@@ -55,14 +51,10 @@ public class BulletController : MonoBehaviour
         {
             mRenderer.sprite = info.bulletImages[0];
         }
-
-        Debug.Log(DestinationTile);
-    }
-
-    protected ObjectInfo OnDemage(ObjectInfo obj)
-    {
-        obj.health = Mathf.Max(obj.health - info.demage, 0);
-        return obj;
+        mCollider.size = new Vector3(
+            info.bulletImages[0].rect.width / GameManager.SIZE_X, 
+            info.bulletImages[0].rect.height / GameManager.SIZE_Y,
+            0);
     }
 
     IEnumerator ChangeSprite()

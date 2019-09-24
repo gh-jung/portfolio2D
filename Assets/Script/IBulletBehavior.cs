@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //총알 발사 메서드
-public interface IBulletShooting
+public interface IBulletBehavior
 {
-    IEnumerator Shooting();
-    ImpuseReturnValue Impuse();
+    IEnumerator Attack();
+    ImpuseReturnValue SetTarget();
+
 }

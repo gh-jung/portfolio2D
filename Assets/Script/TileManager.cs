@@ -78,7 +78,6 @@ public class TileManager : Singleton<TileManager>
 
     public void SetMovePlay()
     {
-        Debug.Log((playerPos / 4) + ", " + (selectEnemyPos / 3));
         int difference = playerPos + ((selectEnemyPos / 3) - (playerPos / 4)) * 4;
         playerMoveAbleTiles[difference].OnClickTile(playerTiles[difference]);
     }

@@ -44,16 +44,4 @@ public class GameManager : Singleton<GameManager>
 
         return returnValue;
     }
-
-    public void OnDamage(BulletController bulletPos)
-    {
-        int count = enemys.Count;
-        for (int i = 0; i < count; i++)
-        {
-            if (enemys[i].currentPos == bulletPos.DestinationTile)
-            {
-                enemys[i].OnDemage(bulletPos.info);
-            }
-        }
-    }
 }

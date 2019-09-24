@@ -13,7 +13,7 @@ public class EnemyTile : Tile
         if(!TileManager.Instance.IsSameLine())
         {
             TileManager.Instance.SetMovePlay();
-            player.Run();
+            player.OnRun();
         }
     }
 }

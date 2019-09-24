@@ -16,6 +16,6 @@ public class PlayerTile : Tile
         player.currentPos = tileNumber;
         Vector3 newPos = transform.position;
         newPos.z = player.transform.position.z;
-        player.OnMove(newPos);
+        player.SetPos(newPos);
     }
 }
