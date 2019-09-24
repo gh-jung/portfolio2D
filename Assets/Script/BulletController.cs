@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //충돌 판정 델리게이트
-public delegate ImpuseReturnValue Impuse();
+public delegate TargetReturnValue Impuse();
 
 public class BulletController : MonoBehaviour
 {
@@ -23,19 +23,16 @@ public class BulletController : MonoBehaviour
         if (info.type == BulletTypes.PLAYER && transform.position.x > destinationX ||
             info.type == BulletTypes.EMENY && transform.position.x < destinationX)
         {
-            //데미지를 받아서 인식 하는 부분도 이벤트로 처리
-            //GameManager.Instance.OnDamage(this);
             Destroy(this.gameObject);
         }
     }
 
-    //총알 생성 시 반드시 호출 필요
-    //플레이어 적 모두 적용가능하도록 수정 필요
+    //총알 생성 시 반드시 호출
     public void SetBulletInfo(BulletInfo mInfo, Impuse bulletImpuse)
     {
         info = Instantiate(mInfo);
         impuseEvent = bulletImpuse;
-        ImpuseReturnValue tempValue = impuseEvent();
+        TargetReturnValue tempValue = impuseEvent();
 
         DestinationTile = tempValue.destinationTile;
         destinationX = tempValue.destinationPosX;

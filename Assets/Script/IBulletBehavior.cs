@@ -6,6 +6,6 @@ using UnityEngine;
 public interface IBulletBehavior
 {
     IEnumerator Attack();
-    ImpuseReturnValue SetTarget();
+    TargetReturnValue SetTarget();
 
 }

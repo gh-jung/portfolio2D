@@ -25,9 +25,9 @@ public class PlayerController : ObjectController, IBulletBehavior
 
     //클릭한 적 타일이 있을경우 && 해당 라인일 경우 -> 해당 위치 공격
     //그 외 -> 해당 라인에서 가장 가까운 적 공격
-    public ImpuseReturnValue SetTarget()
+    public TargetReturnValue SetTarget()
     {
-        ImpuseReturnValue returnValue;
+        TargetReturnValue returnValue;
         int playerCurrentLine = currentPos / 4;
         int selectEnemyPos = TileManager.Instance.SelectEnemyPos;
         int destinationTile;

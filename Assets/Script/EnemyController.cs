@@ -28,11 +28,9 @@ public class EnemyController : ObjectController, IBulletBehavior
         }
     }
 
-    //플레이어와의 충돌 시 같은 라인인지 확인 필요 같은 라인일때 로직 구현
-    public ImpuseReturnValue SetTarget()
+    public TargetReturnValue SetTarget()
     {
-
-        ImpuseReturnValue returnValue;
+        TargetReturnValue returnValue;
         returnValue.destinationPosX = GameManager.SCREEN_LEFT;
         returnValue.destinationTile = currentPos / 3;
 
