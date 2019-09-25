@@ -28,28 +28,59 @@ public class ObjectController : MonoBehaviour
     {
         character.health = Mathf.Clamp(character.health - bulletInfo.demage, 0, character.health - bulletInfo.demage);
         Debug.Log(character.health);
+        if (!character.Alive)
+        {
+            StopAllCoroutines();
+            OnDead();
+            GetComponent<BoxCollider2D>().enabled = false;
+            if(tag == "Enemy")
+            {
+                GameManager.Instance.RemoveEnemy(currentPos);
+            }
+        }
     }
 
     public void OnIdle()
     {
+        if (!character.Alive)
+            return;
+
         state = ObjectTypes.IDLE;
         animator.SetTrigger("Idle");
     }
 
     public void OnJump()
     {
+        if (!character.Alive)
+            return;
+
         state = ObjectTypes.JUMP;
         animator.SetTrigger("Jump");
     }
 
     public void OnRun()
     {
+        if (!character.Alive)
+            return;
+
         state = ObjectTypes.RUN;
         animator.SetTrigger("Run");
     }
 
+    public void OnDead()
+    {
+        if (state == ObjectTypes.DEAD)
+            return;
+
+        state = ObjectTypes.DEAD;
+        animator.SetTrigger("Dead");
+    }
+
     public void OnAttack()
     {
+        if (!character.Alive)
+            return;
+
         state = ObjectTypes.ATTACK;
         animator.SetTrigger("Attack");
     }

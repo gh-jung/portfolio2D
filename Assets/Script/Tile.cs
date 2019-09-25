@@ -17,7 +17,7 @@ public abstract class Tile : MonoBehaviour
 
     public virtual void OnClickTile(Image image)
     {
-        if (player.state == ObjectTypes.RUN)
+        if (player.state == ObjectTypes.RUN || player.state == ObjectTypes.DEAD)
             return;
 
         Color newColor = Color.black;

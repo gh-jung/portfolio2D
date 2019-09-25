@@ -46,6 +46,18 @@ public class PlayerController : ObjectController, IBulletBehavior
         return returnValue;
     }
 
+    public void SetAttackState()
+    {
+        if (GameManager.Instance.IsExistEnemy(currentPos / 4) == int.MaxValue)
+        {
+            OnIdle();
+        }
+        else
+        {
+            OnAttack();
+        }
+    }
+
     //공격할 타일을 받아 해당 지점에 도착 시 적의 존재 유무 확인 및 있을때 데미지를 넣고 제거 없으면 바로 제거
     IEnumerator IBulletBehavior.Attack()
     {
@@ -76,13 +88,6 @@ public class PlayerController : ObjectController, IBulletBehavior
         transform.position = newPos;
         transform.rotation = Quaternion.identity;
 
-        if (GameManager.Instance.IsExistEnemy(currentPos / 4) == int.MaxValue)
-        {
-            OnIdle();
-        }
-        else
-        {
-            OnAttack();
-        }
+        SetAttackState();
     }
 }

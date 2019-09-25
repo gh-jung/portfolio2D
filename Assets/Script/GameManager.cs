@@ -44,4 +44,12 @@ public class GameManager : Singleton<GameManager>
 
         return returnValue;
     }
+
+    public void RemoveEnemy(int posIndex)
+    {
+        if (enemys[posIndex] == null)
+            return;
+
+        enemys.RemoveAt(posIndex);
+    }
 }

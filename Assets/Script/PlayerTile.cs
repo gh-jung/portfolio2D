@@ -10,7 +10,7 @@ public class PlayerTile : Tile
     {
         base.OnClickTile(image);
 
-        if (player.state == ObjectTypes.RUN)
+        if (player.state == ObjectTypes.RUN || player.state == ObjectTypes.DEAD)
             return;
 
         player.currentPos = tileNumber;
