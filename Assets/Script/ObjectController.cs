@@ -36,6 +36,8 @@ public class ObjectController : MonoBehaviour
             if(tag == "Enemy")
             {
                 GameManager.Instance.RemoveEnemy(currentPos);
+                TileManager.Instance.UnSlectTile();
+                GameObject.FindWithTag("Player").GetComponent<PlayerController>().SetAttackState();
             }
         }
     }
@@ -71,7 +73,7 @@ public class ObjectController : MonoBehaviour
     {
         if (state == ObjectTypes.DEAD)
             return;
-
+        animator.speed = 1;
         state = ObjectTypes.DEAD;
         animator.SetTrigger("Dead");
     }
@@ -90,7 +92,11 @@ public class ObjectController : MonoBehaviour
         if (collision.tag == "Bullet")
         {
             BulletController bullet = collision.GetComponent<BulletController>();
-            int comparePos = this.gameObject.tag == "Player" ? currentPos / 4 : currentPos;
+            if (bullet.info.type == BulletTypes.EMENY && tag == "Enemy" ||
+                bullet.info.type == BulletTypes.PLAYER && tag == "Player")
+                return;
+
+                int comparePos = this.gameObject.tag == "Player" ? currentPos / 4 : currentPos;
             if (comparePos == bullet.DestinationTile)
             {
                 OnDemage(bullet.info);

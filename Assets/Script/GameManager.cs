@@ -33,7 +33,7 @@ public class GameManager : Singleton<GameManager>
         int returnValue = int.MaxValue;
         for (int i = 0; i < count; i++)
         {
-            if((enemys[i].currentPos / 3) == lineNum)
+            if(enemys[i] != null && (enemys[i].currentPos / 3) == lineNum)
             {
                 if(returnValue > enemys[i].currentPos)
                 {
@@ -47,9 +47,6 @@ public class GameManager : Singleton<GameManager>
 
     public void RemoveEnemy(int posIndex)
     {
-        if (enemys[posIndex] == null)
-            return;
-
-        enemys.RemoveAt(posIndex);
+        enemys[posIndex] = null;
     }
 }

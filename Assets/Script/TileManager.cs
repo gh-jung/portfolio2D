@@ -52,7 +52,7 @@ public class TileManager : Singleton<TileManager>
         targetTileNumber = number;
     }
 
-    public void UnSelectTile(int newNumber,Color oldColor, TileTypes type)
+    public void SetTileColor(int newNumber,Color oldColor, TileTypes type)
     {
         if (type == TileTypes.PLAYER_TILE)
         {
@@ -62,6 +62,15 @@ public class TileManager : Singleton<TileManager>
         {
             OnTileColorChange(newNumber, oldColor, ref selectEnemyPos, ref enemyTiles);
         }
+    }
+
+    public void UnSlectTile()
+    {
+        Color color = Color.black;
+        color.a = TILE_ALPHA;
+        SetColorToHexRGB(ENEMY_NORMAL_TILE, ref color);
+        enemyTiles[selectEnemyPos].color = color;
+        selectEnemyPos = -1;
     }
 
     public static void SetColorToHexRGB(string hexColorString, ref Color color)

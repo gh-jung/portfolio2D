@@ -43,6 +43,6 @@ public abstract class Tile : MonoBehaviour
         TileManager.SetColorToHexRGB(newTile, ref newColor);
 
         image.color = newColor;
-        TileManager.Instance.UnSelectTile(tileNumber, oldColor, type);
+        TileManager.Instance.SetTileColor(tileNumber, oldColor, type);
     }
 }
