@@ -10,6 +10,8 @@ public class TileManager : Singleton<TileManager>
     public const string ENEMY_SELLECT_TILE = "00C800";
     public const string PLAYER_NORMAL_TILE = "9C3200";
     public const string ENEMY_NORMAL_TILE = "006000";
+    public const int PLAYER_COW = 4;
+    public const int ENEMY_COW = 3;
     public const float TILE_ALPHA = 0.5f;
 
     private const float MAX_COLOR_VALUE = 255;
@@ -66,6 +68,8 @@ public class TileManager : Singleton<TileManager>
 
     public void UnSlectTile()
     {
+        if (selectEnemyPos == -1 || selectEnemyPos == int.MaxValue)
+            return;
         Color color = Color.black;
         color.a = TILE_ALPHA;
         SetColorToHexRGB(ENEMY_NORMAL_TILE, ref color);
