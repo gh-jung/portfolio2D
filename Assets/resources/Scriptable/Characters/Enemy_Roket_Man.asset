@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a9411e74a519c4b9b799223d93653d, type: 3}
   m_Name: Enemy_Roket_Man
   m_EditorClassIdentifier: 
+  maxHealth: 40
   health: 40
   bullet: {fileID: 11400000, guid: ad69122a0d12bbb43a09006ef3d69e95, type: 2}
   attackSpeed: 2.5

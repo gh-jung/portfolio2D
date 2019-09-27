@@ -69,6 +69,7 @@ public class PlayerController : ObjectController, IBulletBehavior
 
     IEnumerator Move(Vector3 newPos)
     {
+        OnRun();
         float distance = Vector3.Distance(transform.position, newPos);
         if (transform.position.x > newPos.x)
         {
