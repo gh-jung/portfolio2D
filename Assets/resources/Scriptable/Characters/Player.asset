@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a9411e74a519c4b9b799223d93653d, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
+  maxHealth: 100
   health: 100
   bullet: {fileID: 11400000, guid: 4d863733af282724bbc1ac5cd22b484f, type: 2}
   attackSpeed: 1

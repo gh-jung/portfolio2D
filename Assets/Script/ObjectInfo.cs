@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ObjectInfo", menuName = "GameObj/ObjectInfo", order = 1)]
 public class ObjectInfo : ScriptableObject
 {
+    public int maxHealth;
     public int health;
     public BulletInfo bullet;
     public float attackSpeed;

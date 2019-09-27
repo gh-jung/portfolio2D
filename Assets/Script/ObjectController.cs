@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ObjectController : MonoBehaviour
 {
@@ -12,6 +14,10 @@ public class ObjectController : MonoBehaviour
     public ObjectTypes state;
     public int currentPos;
 
+    public Canvas canvas;
+    public TextMeshProUGUI text;
+    public Slider hpBar;
+
     protected void InitObj(string path)
     {
         animator = GetComponent<Animator>();
@@ -22,17 +28,25 @@ public class ObjectController : MonoBehaviour
             bullet = character.bullet;
         }
         animator.runtimeAnimatorController = character.overrideController;
+
+        text.SetText(character.health.ToString());
+        hpBar.value = character.health / (float)character.maxHealth;
     }
 
     public void OnDemage(BulletInfo bulletInfo)
     {
         character.health = Mathf.Clamp(character.health - bulletInfo.demage, 0, character.health - bulletInfo.demage);
-        Debug.Log(character.health);
+        text.SetText(character.health.ToString());
+        hpBar.value = character.health / (float)character.maxHealth;
+        StopCoroutine(ShowHPUI());
+        StartCoroutine(ShowHPUI());
+
         if (!character.Alive)
         {
             StopAllCoroutines();
             OnDead();
             GetComponent<BoxCollider2D>().enabled = false;
+            canvas.enabled = false;
             if(tag == "Enemy")
             {
                 GameManager.Instance.RemoveEnemy(currentPos);
@@ -103,5 +117,12 @@ public class ObjectController : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
+    }
+
+    IEnumerator ShowHPUI()
+    {
+        canvas.enabled = true;
+        yield return new WaitForSeconds(3);
+        canvas.enabled = false;
     }
 }
