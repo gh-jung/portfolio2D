@@ -1,0 +1,1072 @@
+fileFormatVersion: 2
+guid: c2e547bb8afb98544b6c4ff8210ec4ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5759752541462486778
+    second: InfinitiBattlefield_0
+  - first:
+      213: -7126566069313535647
+    second: InfinitiBattlefield_1
+  - first:
+      213: 2523199316343795074
+    second: InfinitiBattlefield_2
+  - first:
+      213: 5633903469164769803
+    second: InfinitiBattlefield_3
+  - first:
+      213: -3547625616109085043
+    second: InfinitiBattlefield_4
+  - first:
+      213: -6527909844612561870
+    second: InfinitiBattlefield_5
+  - first:
+      213: 5364158262818442299
+    second: InfinitiBattlefield_6
+  - first:
+      213: -1895362965002190948
+    second: InfinitiBattlefield_7
+  - first:
+      213: 6511226796527264551
+    second: InfinitiBattlefield_8
+  - first:
+      213: -6475322620425485717
+    second: InfinitiBattlefield_9
+  - first:
+      213: -6369519630692651445
+    second: InfinitiBattlefield_10
+  - first:
+      213: 4868917106007503349
+    second: InfinitiBattlefield_11
+  - first:
+      213: -8397869976006293161
+    second: InfinitiBattlefield_12
+  - first:
+      213: -2412293508582327736
+    second: InfinitiBattlefield_13
+  - first:
+      213: 4505277526182347732
+    second: InfinitiBattlefield_14
+  - first:
+      213: 1819253190176033178
+    second: InfinitiBattlefield_15
+  - first:
+      213: 9043634442880496853
+    second: InfinitiBattlefield_16
+  - first:
+      213: -651285667684494297
+    second: InfinitiBattlefield_17
+  - first:
+      213: 3617192437825975392
+    second: InfinitiBattlefield_18
+  - first:
+      213: 5325433984187969105
+    second: InfinitiBattlefield_19
+  - first:
+      213: -7755517629585579377
+    second: InfinitiBattlefield_20
+  - first:
+      213: -3158308647454074183
+    second: InfinitiBattlefield_21
+  - first:
+      213: 881532281408668936
+    second: InfinitiBattlefield_22
+  - first:
+      213: 3799023570201902007
+    second: InfinitiBattlefield_23
+  - first:
+      213: 5850107490004496976
+    second: InfinitiBattlefield_24
+  - first:
+      213: 5515226125840181552
+    second: InfinitiBattlefield_25
+  - first:
+      213: 2558053614966064535
+    second: InfinitiBattlefield_26
+  - first:
+      213: 3254087686526704524
+    second: InfinitiBattlefield_27
+  - first:
+      213: -3491264014261961767
+    second: InfinitiBattlefield_28
+  - first:
+      213: -8527762748270718612
+    second: InfinitiBattlefield_29
+  - first:
+      213: -8156048271954941862
+    second: InfinitiBattlefield_30
+  - first:
+      213: -2747066881082115391
+    second: InfinitiBattlefield_31
+  - first:
+      213: -7299828660680139599
+    second: InfinitiBattlefield_32
+  - first:
+      213: 7295465129355199044
+    second: InfinitiBattlefield_33
+  - first:
+      213: 8480315072544344573
+    second: InfinitiBattlefield_34
+  - first:
+      213: 6074112066099581680
+    second: InfinitiBattlefield_35
+  - first:
+      213: -3613219393787854698
+    second: InfinitiBattlefield_36
+  - first:
+      213: 2481804934870636857
+    second: InfinitiBattlefield_37
+  - first:
+      213: 974359156397106834
+    second: InfinitiBattlefield_38
+  - first:
+      213: 6901728845715732574
+    second: InfinitiBattlefield_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InfinitiBattlefield_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e285d54fabfcf5468db5dc34323f80c
+      internalID: -5759752541462486778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9533d350a037244ca04dd4d196c8090
+      internalID: -7126566069313535647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5a10c4ef2b79e4aaefeef9bb16670d
+      internalID: 2523199316343795074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa501ed44d8a1e4bb1a5a0863553c3c
+      internalID: 5633903469164769803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a790133302ced4b806d7e92de48e34
+      internalID: -3547625616109085043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb98278bfa9340848b4bbf540173d0a4
+      internalID: -6527909844612561870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188cf956bfcbcc04fb3a763993aecdb8
+      internalID: 5364158262818442299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1056
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85e4826c0f66cd44a11a6e1075dfbec
+      internalID: -1895362965002190948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8b7cf45900d674486c85dc6603da59
+      internalID: 6511226796527264551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c618aac47cb29454d8f92074f21cbb7f
+      internalID: -6475322620425485717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7963c5e2404b720418884f19699c222e
+      internalID: -6369519630692651445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0752e502190504285fa8ce3b32ca90
+      internalID: 4868917106007503349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e4871818ce942438c912505585cd18
+      internalID: -8397869976006293161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cf489e432168b4a8b187b0a4287ccc
+      internalID: -2412293508582327736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701a8ee5c850f2c4cb5388013950c6ad
+      internalID: 4505277526182347732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 813
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f82428a30ed7264f97e7fd984b24a15
+      internalID: 1819253190176033178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e63ac68cdad508479494211aebc0446
+      internalID: 9043634442880496853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9ca35ee421b4a40b8c34f84898db81
+      internalID: -651285667684494297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8614a8464f19b440b4360159e7eaef9
+      internalID: 3617192437825975392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29c96b539172d24596f220ac5402580
+      internalID: 5325433984187969105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0736b591b0e41c4c8fc7daee216fe6e
+      internalID: -7755517629585579377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d1d13ade379a140a6cf393b748012d
+      internalID: -3158308647454074183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fffa9517a8517418b207c367c313eb
+      internalID: 881532281408668936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 570
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccdf09c6503ecb4f897306f849b3e0b
+      internalID: 3799023570201902007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98545c6f99684d74e8002830b957dc62
+      internalID: 5850107490004496976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af252a66cdea93f43a78c7dc4b3d25ef
+      internalID: 5515226125840181552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4fe7038de7668439a1de8f9c34def7
+      internalID: 2558053614966064535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9210de1533c0943977f572db0596c3
+      internalID: 3254087686526704524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56749bfd0bc4cd749ac2b9c506a30d12
+      internalID: -3491264014261961767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82da2a50fa014cb4f903ee0ac3fd9c54
+      internalID: -8527762748270718612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af7ebee769d8e64bbece89aefef66d6
+      internalID: -8156048271954941862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_31
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 327
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f86bfb2412393f41892a52ad5d393c9
+      internalID: -2747066881082115391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cb5bd4a419e54468a0607dc2ed2fbe
+      internalID: -7299828660680139599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0bfefeb6475784f96aa21d8155fe38
+      internalID: 7295465129355199044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed2d7659e5b6324b9bc27b45494c841
+      internalID: 8480315072544344573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_35
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11b5ab8baa34c44db196dc005376c29
+      internalID: 6074112066099581680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_36
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8676bf8d3750a3744bcc5104063be8cf
+      internalID: -3613219393787854698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_37
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508adda20548f1442a5bb809682a0016
+      internalID: 2481804934870636857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_38
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5d7e7f241b893448e89c64524ca006
+      internalID: 974359156397106834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InfinitiBattlefield_39
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 84
+        width: 500
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a895e51efcff4409888bc21897bf4f
+      internalID: 6901728845715732574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a69910c43b2c1ec44babe3f9b5479a01
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
