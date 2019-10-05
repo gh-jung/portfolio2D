@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,11 +29,11 @@ public class PlayerController : ObjectController, IBulletBehavior
     public TargetReturnValue SetTarget()
     {
         TargetReturnValue returnValue;
-        int playerCurrentLine = currentPos / 4;
+        int playerCurrentLine = currentPos / TileManager.PLAYER_COW;
         int selectEnemyPos = TileManager.Instance.SelectEnemyPos;
         int destinationTile;
 
-        if (selectEnemyPos != -1 && playerCurrentLine == (selectEnemyPos / 3))
+        if (selectEnemyPos != -1 && playerCurrentLine == (selectEnemyPos / TileManager.ENEMY_COW))
         {
             destinationTile = selectEnemyPos;
         }
@@ -41,14 +42,20 @@ public class PlayerController : ObjectController, IBulletBehavior
             destinationTile = GameManager.Instance.IsExistEnemy(playerCurrentLine);
         }
 
-        returnValue.destinationPosX = TileManager.Instance.enemyMoveAbleTiles[destinationTile].transform.position.x;
+        returnValue.destinationPosX = 0;
         returnValue.destinationTile = destinationTile;
+
+        if (destinationTile != int.MaxValue)
+        {
+            returnValue.destinationPosX = TileManager.Instance.enemyMoveAbleTiles[destinationTile].transform.position.x;
+        }
+
         return returnValue;
     }
 
     public void SetAttackState()
     {
-        if (GameManager.Instance.IsExistEnemy(currentPos / 4) == int.MaxValue)
+        if (GameManager.Instance.IsExistEnemy(currentPos / TileManager.PLAYER_COW) == int.MaxValue)
         {
             OnIdle();
         }

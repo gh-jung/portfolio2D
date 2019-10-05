@@ -22,6 +22,23 @@ public class GameManager : Singleton<GameManager>
     private float currentTime;
     private int respawnCount = 0;
 
+    private int EmenysCount
+    {
+        get
+        {
+            int count = 0;
+            foreach(ObjectController controller in enemys)
+            {
+                if(controller)
+                {
+                    ++count;
+                }
+            }
+
+            return count;
+        }
+    }
+
     public static ObjectInfo LoadScriptable(string obj)
     {
         ObjectInfo temp = Resources.Load("Scriptable/" + obj) as ObjectInfo;
@@ -42,23 +59,27 @@ public class GameManager : Singleton<GameManager>
 
     private void Update()
     {
-        if(currentTime > respawnTime)
+        if (EmenysCount != enemys.Count)
         {
-            GameObject enemyObj = Instantiate(enemy, enemysParent);
-            ObjectController enemyController = enemyObj.GetComponent<ObjectController>(); ;
-            int tileNumber = GetEmptyPos();
-
-            enemyObj.transform.position = TileManager.Instance.enemyMoveAbleTiles[tileNumber].transform.position;
-            enemys[tileNumber] = enemyController;
-            enemys[tileNumber].currentPos = tileNumber;
-            currentTime = 0;
-            respawnCount++;
-            if(respawnCount % 10 == 0)
+            currentTime += Time.deltaTime;
+            if (currentTime > respawnTime)
             {
-                respawnTime *= 0.9f;
+                GameObject enemyObj = Instantiate(enemy, enemysParent);
+                ObjectController enemyController = enemyObj.GetComponent<ObjectController>(); ;
+                int tileNumber = GetEmptyPos();
+
+                enemyObj.transform.position = TileManager.Instance.enemyMoveAbleTiles[tileNumber].transform.position;
+                enemys[tileNumber] = enemyController;
+                enemys[tileNumber].currentPos = tileNumber;
+
+                currentTime = 0;
+                respawnCount++;
+                if (respawnCount % 10 == 0)
+                {
+                    respawnTime *= 0.9f;
+                }
             }
         }
-        currentTime += Time.deltaTime;
     }
 
     //플레이어와 같은 라인 찾고 해당라인에서 가장 가까운 적 찾기
@@ -68,7 +89,7 @@ public class GameManager : Singleton<GameManager>
         int returnValue = int.MaxValue;
         for (int i = 0; i < count; i++)
         {
-            if(enemys[i] != null && (enemys[i].currentPos / 3) == lineNum)
+            if(enemys[i] != null && (enemys[i].currentPos / TileManager.ENEMY_COW) == lineNum)
             {
                 if(returnValue > enemys[i].currentPos)
                 {

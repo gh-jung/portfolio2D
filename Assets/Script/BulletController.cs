@@ -34,6 +34,11 @@ public class BulletController : MonoBehaviour
         impuseEvent = bulletImpuse;
         TargetReturnValue tempValue = impuseEvent();
 
+        if(tempValue.destinationTile == int.MaxValue)
+        {
+            Destroy(this.gameObject);
+        }
+
         DestinationTile = tempValue.destinationTile;
         destinationX = tempValue.destinationPosX;
 
