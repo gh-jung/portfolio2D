@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -13,10 +14,14 @@ public class GameManager : Singleton<GameManager>
     public const int SCREEN_LEFT = -10;
     public const int SCREEN_RIGHT = 10;
 
+    public TextMeshProUGUI pointUI;
+    private int gamePoint;
+
     public List<ObjectController> enemys = new List<ObjectController>();
+    public ObjectController player;
 
     public GameObject enemy;
-    public Transform enemysParent;
+
 
     public float respawnTime = 3;
     private float currentTime;
@@ -52,6 +57,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        gamePoint = 0;
+        pointUI.text = String.Format("{0:D8}", gamePoint);
         currentTime = 0;
         respawnCount = 0;
         respawnTime = 3;
@@ -59,12 +66,12 @@ public class GameManager : Singleton<GameManager>
 
     private void Update()
     {
-        if (EmenysCount != enemys.Count)
+        if (EmenysCount != enemys.Count && player.character.Alive)
         {
             currentTime += Time.deltaTime;
             if (currentTime > respawnTime)
             {
-                GameObject enemyObj = Instantiate(enemy, enemysParent);
+                GameObject enemyObj = Instantiate(enemy);
                 ObjectController enemyController = enemyObj.GetComponent<ObjectController>(); ;
                 int tileNumber = GetEmptyPos();
 
@@ -116,5 +123,24 @@ public class GameManager : Singleton<GameManager>
         }
 
         return value;
+    }
+
+    public static int GetPoint()
+    {
+        return GameManager.Instance.gamePoint;
+    }
+
+    public static void AddPoint(int point)
+    {
+        GameManager.Instance.gamePoint += point;
+        GameManager.Instance.pointUI.text = String.Format("{0:D8}", GameManager.Instance.gamePoint);
+    }
+
+    public void AllWait()
+    {
+        foreach(ObjectController controller in enemys)
+        {
+            controller.SetIsIdle(true);
+        }
     }
 }

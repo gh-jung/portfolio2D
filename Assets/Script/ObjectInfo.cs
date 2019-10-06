@@ -10,6 +10,8 @@ public class ObjectInfo : ScriptableObject
     public int health;
     public BulletInfo bullet;
     public float attackSpeed;
+    public int demagePoint;
+    public int deathPoint;
     public AnimatorOverrideController overrideController;
 
     public bool Alive

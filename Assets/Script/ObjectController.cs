@@ -18,6 +18,8 @@ public class ObjectController : MonoBehaviour
     public TextMeshProUGUI text;
     public Slider hpBar;
 
+    protected bool isIdle;
+
     protected void InitObj(string path)
     {
         animator = GetComponent<Animator>();
@@ -31,6 +33,7 @@ public class ObjectController : MonoBehaviour
 
         text.SetText(character.health.ToString());
         hpBar.value = character.health / (float)character.maxHealth;
+        isIdle = false;
     }
 
     public void OnDemage(BulletInfo bulletInfo)
@@ -41,6 +44,11 @@ public class ObjectController : MonoBehaviour
         StopCoroutine(ShowHPUI());
         StartCoroutine(ShowHPUI());
 
+        if (tag == "Enemy")
+        {
+            GameManager.AddPoint(character.demagePoint);
+        }
+
         if (!character.Alive)
         {
             StopAllCoroutines();
@@ -49,11 +57,22 @@ public class ObjectController : MonoBehaviour
             canvas.enabled = false;
             if(tag == "Enemy")
             {
+                Destroy(this.gameObject, 3);
                 GameManager.Instance.RemoveEnemy(currentPos);
+                GameManager.AddPoint(character.deathPoint);
                 TileManager.Instance.UnSlectTile();
                 GameObject.FindWithTag("Player").GetComponent<PlayerController>().SetAttackState();
             }
+            else if(tag == "Player")
+            {
+                GameManager.Instance.AllWait();
+            }
         }
+    }
+
+    public void SetIsIdle(bool state)
+    {
+        isIdle = state;
     }
 
     public void OnIdle()
@@ -110,7 +129,7 @@ public class ObjectController : MonoBehaviour
                 bullet.info.type == BulletTypes.PLAYER && tag == "Player")
                 return;
 
-                int comparePos = this.gameObject.tag == "Player" ? currentPos / 4 : currentPos;
+            int comparePos = this.gameObject.tag == "Player" ? currentPos / TileManager.PLAYER_COW : currentPos;
             if (comparePos == bullet.DestinationTile)
             {
                 OnDemage(bullet.info);

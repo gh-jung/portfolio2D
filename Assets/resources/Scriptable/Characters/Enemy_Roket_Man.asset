@@ -16,4 +16,6 @@ MonoBehaviour:
   health: 40
   bullet: {fileID: 11400000, guid: ad69122a0d12bbb43a09006ef3d69e95, type: 2}
   attackSpeed: 2.5
+  demagePoint: 10
+  deathPoint: 50
   overrideController: {fileID: 22100000, guid: f0c40bc552da7584d94af6ba24ecbe87, type: 2}

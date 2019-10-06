@@ -16,7 +16,7 @@ public class EnemyController : ObjectController, IBulletBehavior
     // Update is called once per frame
     void Update()
     {
-        if (state == ObjectTypes.IDLE)
+        if (state == ObjectTypes.IDLE && !isIdle)
         {
             currentTime += Time.deltaTime;
             if (currentTime > character.AttackSpeed)
