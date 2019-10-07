@@ -46,7 +46,7 @@ public class ObjectController : MonoBehaviour
 
         if (tag == "Enemy")
         {
-            GameManager.AddPoint(character.demagePoint);
+            GameManager.Instance.AddPoint(character.demagePoint);
         }
 
         if (!character.Alive)
@@ -59,7 +59,8 @@ public class ObjectController : MonoBehaviour
             {
                 Destroy(this.gameObject, 3);
                 GameManager.Instance.RemoveEnemy(currentPos);
-                GameManager.AddPoint(character.deathPoint);
+                GameManager.Instance.AddPoint(character.deathPoint);
+                GameManager.Instance.IncreseKillPoint();
                 TileManager.Instance.UnSlectTile();
                 GameObject.FindWithTag("Player").GetComponent<PlayerController>().SetAttackState();
             }

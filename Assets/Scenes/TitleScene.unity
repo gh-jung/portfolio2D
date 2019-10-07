@@ -1124,8 +1124,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mSprite: {fileID: -5759752541462486778, guid: c2e547bb8afb98544b6c4ff8210ec4ee,
-    type: 3}
+  mSprite: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   mFixedAspect: 0
@@ -1575,8 +1574,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mSprite: {fileID: -2602182529308941437, guid: e654eeeb6dd11284ca067cd7433ad8a1,
-    type: 3}
+  mSprite: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   mFixedAspect: 0
@@ -1727,7 +1725,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mSprite: {fileID: 21300000, guid: ae62b0808cc05be4eb2316284f3d67dd, type: 3}
+  mSprite: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   mFixedAspect: 0

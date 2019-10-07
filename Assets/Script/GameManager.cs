@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
+    public static GameManager gameManager;
+
     public const int SIZE_X = 20;
     public const int SIZE_Y = 20;
     public const string PLAYER = "Characters/player";
@@ -65,8 +67,17 @@ public class GameManager : Singleton<GameManager>
         return Instantiate(Resources.Load(GameManager.BULLET_PATH) as GameObject);
     }
 
+    private void Awake()
+    {
+        if(gameManager == null)
+        {
+            gameManager = GameManager.Instance;
+        }
+    }
+
     private void Start()
     {
+
         IsShowOverview(false);
         killCount = 0;
         playTime = 0;
@@ -163,20 +174,20 @@ public class GameManager : Singleton<GameManager>
         return value;
     }
 
-    public static int GetPoint()
+    public int GetPoint()
     {
-        return GameManager.Instance.gamePoint;
+        return gameManager.gamePoint;
     }
 
-    public static void AddPoint(int point)
+    public void AddPoint(int point)
     {
-        GameManager.Instance.gamePoint += point;
-        GameManager.Instance.pointUI.text = String.Format("{0:D8}", GameManager.Instance.gamePoint);
+        gameManager.gamePoint += point;
+        gameManager.pointUI.text = String.Format("{0:D8}", gameManager.gamePoint);
     }
 
-    public static void IncreseKillPoint()
+    public void IncreseKillPoint()
     {
-        ++GameManager.Instance.killCount;
+        ++gameManager.killCount;
     }
 
     public void AllWait()
