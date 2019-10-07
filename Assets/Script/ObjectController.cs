@@ -66,6 +66,7 @@ public class ObjectController : MonoBehaviour
             else if(tag == "Player")
             {
                 GameManager.Instance.AllWait();
+                StartCoroutine(GameManager.Instance.ShowPlayScoreView());
             }
         }
     }

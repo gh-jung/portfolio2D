@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8788ea9c5aab04ab7e96bfdf9ba52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
+  sceneName: GameScene
   isDisabled: 0
 --- !u!114 &996667963
 MonoBehaviour:
@@ -1379,8 +1379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8788ea9c5aab04ab7e96bfdf9ba52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
-  isDisabled: 0
+  sceneName: GameScene
+  isDisabled: 1
 --- !u!114 &1677950692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,5 +1781,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8788ea9c5aab04ab7e96bfdf9ba52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
-  isDisabled: 0
+  sceneName: GameScene
+  isDisabled: 1

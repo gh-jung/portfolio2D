@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -21,8 +23,6 @@ public class GameManager : Singleton<GameManager>
     public ObjectController player;
 
     public GameObject enemy;
-
-
     public float respawnTime = 3;
     private float currentTime;
     private int respawnCount = 0;
@@ -44,6 +44,16 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    private int killCount;
+    private float playTime;
+
+    public Image[] windows;
+    public TextMeshProUGUI windowTitle;
+    public TextMeshProUGUI[] menuNames;
+    public TextMeshProUGUI[] menuValue;
+
+    public Button[] buttons;
+
     public static ObjectInfo LoadScriptable(string obj)
     {
         ObjectInfo temp = Resources.Load("Scriptable/" + obj) as ObjectInfo;
@@ -57,6 +67,9 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        IsShowOverview(false);
+        killCount = 0;
+        playTime = 0;
         gamePoint = 0;
         pointUI.text = String.Format("{0:D8}", gamePoint);
         currentTime = 0;
@@ -64,15 +77,40 @@ public class GameManager : Singleton<GameManager>
         respawnTime = 3;
     }
 
+    private void IsShowOverview(bool isShow)
+    {
+        windowTitle.enabled = isShow;
+        foreach (Image image in windows)
+        {
+            image.enabled = isShow;
+        }
+
+        foreach (TextMeshProUGUI text in menuNames)
+        {
+            text.enabled = isShow;
+        }
+
+        foreach (TextMeshProUGUI text in menuValue)
+        {
+            text.enabled = isShow;
+        }
+        
+        foreach(Button button in buttons)
+        {
+            button.gameObject.SetActive(isShow);
+        }
+    }
+
     private void Update()
     {
         if (EmenysCount != enemys.Count && player.character.Alive)
         {
             currentTime += Time.deltaTime;
+            playTime += Time.deltaTime;
             if (currentTime > respawnTime)
             {
                 GameObject enemyObj = Instantiate(enemy);
-                ObjectController enemyController = enemyObj.GetComponent<ObjectController>(); ;
+                ObjectController enemyController = enemyObj.GetComponent<ObjectController>();
                 int tileNumber = GetEmptyPos();
 
                 enemyObj.transform.position = TileManager.Instance.enemyMoveAbleTiles[tileNumber].transform.position;
@@ -136,11 +174,87 @@ public class GameManager : Singleton<GameManager>
         GameManager.Instance.pointUI.text = String.Format("{0:D8}", GameManager.Instance.gamePoint);
     }
 
+    public static void IncreseKillPoint()
+    {
+        ++GameManager.Instance.killCount;
+    }
+
     public void AllWait()
     {
         foreach(ObjectController controller in enemys)
         {
-            controller.SetIsIdle(true);
+            if (controller != null)
+            {
+                controller.SetIsIdle(true);
+            }
+        }
+    }
+
+    public void OnSceneChange(String sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public IEnumerator ShowPlayScoreView()
+    {
+        yield return new WaitForSeconds(3);
+        windows[0].enabled = true;
+        Color color = windows[0].color;
+        while (windows[0].color.a < 100.0f/255.0f)
+        {
+            color.a += Time.deltaTime;
+            windows[0].color = color;
+            yield return null;
+        }
+        color.a = 100.0f / 255.0f;
+        windows[0].color = color;
+        yield return new WaitForSeconds(1);
+        foreach(Image image in windows)
+        {
+            image.enabled = true;
+        }
+        windowTitle.enabled = true;
+
+        int count = menuNames.Length;
+        for (int i = 0; i < count; ++i)
+        {
+            yield return new WaitForSeconds(1);
+            menuNames[i].enabled = true;
+            switch (i)
+            {
+                case 0:
+                    var span = TimeSpan.FromSeconds(playTime);
+                    menuValue[i].text = String.Format("{0:00} : {1:00} : {2:00}", span.TotalHours, span.Minutes, span.Seconds);
+
+                    break;
+                case 1:
+                    menuValue[i].text = String.Format("{0:D8}", killCount);
+                    break;
+                case 2:
+                    menuValue[i].text = String.Format("{0:D8}", gamePoint);
+                    break;
+                case 3:
+                    menuValue[i].enabled = true;
+                    int pointValue = gamePoint + killCount * 100 + (int)playTime * 100;
+                    float showPoint = 0;
+                    while(showPoint < pointValue)
+                    {
+                        menuValue[i].text = String.Format("{0:D8}", (int)showPoint);
+                        showPoint += Time.deltaTime * 500;
+                        yield return null;
+                    }
+                    menuValue[i].text = String.Format("{0:D8}", pointValue);
+                    break;
+                default:
+                    break;
+            }
+            yield return new WaitForSeconds(1);
+            menuValue[i].enabled = true;
+        }
+        yield return new WaitForSeconds(1);
+        foreach (Button button in buttons)
+        {
+            button.gameObject.SetActive(true);
         }
     }
 }
