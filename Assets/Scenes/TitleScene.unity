@@ -1061,7 +1061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832719669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 889499597}
@@ -1078,7 +1078,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1280, y: 256, z: 0}
+  m_Size: {x: 1280, y: 268, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &832719672
 MonoBehaviour:
@@ -1121,18 +1121,18 @@ MonoBehaviour:
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: -92
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 1280
-  mHeight: 256
+  mHeight: 268
   mDepth: 0
   mMat: {fileID: 0}
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5
+  aspectRatio: 4.776119
 --- !u!1 &863547826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,19 +1539,19 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: -190
   rightAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: 190
   bottomAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 48
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: -36
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
@@ -1764,11 +1764,11 @@ MonoBehaviour:
   bottomAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 40
+    absolute: 0
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: -120
+    absolute: -92
   updateAnchors: 1
   showInPanelTool: 1
   generateNormals: 0
@@ -1784,7 +1784,7 @@ MonoBehaviour:
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: 0, z: 1280, w: 256}
+  mClipRange: {x: -0.0007324219, y: -6, z: 1279.5505, w: 268}
   mClipSoftness: {x: 100, y: 0}
   mDepth: 2
   mSortingOrder: 0
@@ -2090,19 +2090,19 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 115
   rightAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: -275
   bottomAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 42
   topAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: -30
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
@@ -2339,15 +2339,15 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 272
   rightAnchor:
     target: {fileID: 0}
     relative: 1
-    absolute: 0
+    absolute: -112
   bottomAnchor:
     target: {fileID: 0}
     relative: 0
-    absolute: 0
+    absolute: 12
   topAnchor:
     target: {fileID: 0}
     relative: 1

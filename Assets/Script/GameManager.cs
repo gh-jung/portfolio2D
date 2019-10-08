@@ -256,7 +256,7 @@ public class GameManager : Singleton<GameManager>
                     while(showPoint < pointValue)
                     {
                         menuValue[i].text = String.Format("{0:D8}", (int)showPoint);
-                        showPoint += Time.deltaTime * 500;
+                        showPoint += Time.deltaTime * (pointValue / 2);
                         yield return null;
                     }
                     menuValue[i].text = String.Format("{0:D8}", pointValue);
