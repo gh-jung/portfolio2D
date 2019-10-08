@@ -5725,7 +5725,7 @@ GameObject:
   - component: {fileID: 1566504602}
   - component: {fileID: 1566504601}
   m_Layer: 0
-  m_Name: Sound
+  m_Name: BackGroundSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7005,6 +7005,8 @@ MonoBehaviour:
   buttons:
   - {fileID: 2019181575}
   - {fileID: 313582901}
+  backgroundSoundSource: {fileID: 1566504601}
+  overSound: {fileID: 8300000, guid: bd010391121d314498eac9c3a83099d1, type: 3}
 --- !u!4 &1874095553
 Transform:
   m_ObjectHideFlags: 0

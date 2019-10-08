@@ -45,5 +45,6 @@ public class EnemyController : ObjectController, IBulletBehavior
         GameObject go = GameManager.LoadBullet(GameManager.BULLET_PATH);
         go.transform.position = bulletInitPos.position;
         go.GetComponent<BulletController>().SetBulletInfo(bullet, SetTarget);
+        OnPlaySound(bullet.bulletSound[UnityEngine.Random.Range(0, bullet.bulletSound.Length)]);
     }
 }

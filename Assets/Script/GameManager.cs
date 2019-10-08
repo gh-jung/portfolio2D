@@ -56,6 +56,9 @@ public class GameManager : Singleton<GameManager>
 
     public Button[] buttons;
 
+    public AudioSource backgroundSoundSource;
+    public AudioClip overSound;
+
     public static ObjectInfo LoadScriptable(string obj)
     {
         ObjectInfo temp = Resources.Load("Scriptable/" + obj) as ObjectInfo;
@@ -208,7 +211,9 @@ public class GameManager : Singleton<GameManager>
 
     public IEnumerator ShowPlayScoreView()
     {
+        StartCoroutine(FadeOut(backgroundSoundSource));
         yield return new WaitForSeconds(3);
+        StartCoroutine(FadeIn(backgroundSoundSource, 0.5f, overSound));
         windows[0].enabled = true;
         Color color = windows[0].color;
         while (windows[0].color.a < 100.0f/255.0f)
@@ -267,5 +272,27 @@ public class GameManager : Singleton<GameManager>
         {
             button.gameObject.SetActive(true);
         }
+    }
+
+    public IEnumerator FadeIn(AudioSource source, float TargetValue, AudioClip clip)
+    {
+        source.clip = clip;
+        source.Play();
+        while(backgroundSoundSource.volume < TargetValue)
+        {
+            source.volume += Time.deltaTime * (0.5f / 3);
+            yield return null;
+        }
+        source.volume = TargetValue;
+    }
+
+    public IEnumerator FadeOut(AudioSource source)
+    {
+        while (backgroundSoundSource.volume > 0)
+        {
+            source.volume -= Time.deltaTime * (0.5f / 3);
+            yield return null;
+        }
+        source.volume = 0;
     }
 }

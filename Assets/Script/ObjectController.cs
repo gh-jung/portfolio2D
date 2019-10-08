@@ -7,6 +7,9 @@ using TMPro;
 public class ObjectController : MonoBehaviour
 {
     protected Animator animator;
+    protected bool isIdle;
+
+    private AudioSource audioSource;
 
     public BulletInfo bullet;
     public ObjectInfo character;
@@ -18,10 +21,9 @@ public class ObjectController : MonoBehaviour
     public TextMeshProUGUI text;
     public Slider hpBar;
 
-    protected bool isIdle;
-
     protected void InitObj(string path)
     {
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         ObjectInfo tempInfo = GameManager.LoadScriptable(path);
         if (tempInfo != null)
@@ -34,6 +36,11 @@ public class ObjectController : MonoBehaviour
         text.SetText(character.health.ToString());
         hpBar.value = character.health / (float)character.maxHealth;
         isIdle = false;
+    }
+
+    public void OnPlaySound(AudioClip audio)
+    {
+        audioSource.PlayOneShot(audio);
     }
 
     public void OnDemage(BulletInfo bulletInfo)
@@ -63,11 +70,14 @@ public class ObjectController : MonoBehaviour
                 GameManager.Instance.IncreseKillPoint();
                 TileManager.Instance.UnSlectTile();
                 GameObject.FindWithTag("Player").GetComponent<PlayerController>().SetAttackState();
+                audioSource.PlayOneShot(character.deathSound[Random.Range(0, character.deathSound.Length)]);
             }
             else if(tag == "Player")
             {
                 GameManager.Instance.AllWait();
+                audioSource.PlayOneShot(character.deathSound[Random.Range(0, character.deathSound.Length)]);
                 StartCoroutine(GameManager.Instance.ShowPlayScoreView());
+
             }
         }
     }

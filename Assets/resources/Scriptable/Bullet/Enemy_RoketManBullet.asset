@@ -20,3 +20,6 @@ MonoBehaviour:
   - {fileID: 1554739709401105749, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
   - {fileID: -4802926394792838607, guid: 11486a053e3ab7a4db596af35ffcf2ea, type: 3}
   speed: 8
+  bulletSound:
+  - {fileID: 8300000, guid: a22ea6fe28a12d04bb58498227809d6f, type: 3}
+  - {fileID: 8300000, guid: e14584a748d29e24f86b3262abe49558, type: 3}

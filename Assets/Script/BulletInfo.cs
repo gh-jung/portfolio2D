@@ -9,4 +9,5 @@ public class BulletInfo : ScriptableObject
     public BulletTypes type;
     public Sprite[] bulletImages;
     public float speed;
+    public AudioClip[] bulletSound;
 }

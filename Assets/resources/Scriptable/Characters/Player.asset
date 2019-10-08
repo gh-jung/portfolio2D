@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a9411e74a519c4b9b799223d93653d, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  health: 10
+  maxHealth: 100
+  health: 100
   bullet: {fileID: 11400000, guid: 4d863733af282724bbc1ac5cd22b484f, type: 2}
   attackSpeed: 1
   demagePoint: 0
   deathPoint: 0
   overrideController: {fileID: 22100000, guid: ffbf51a1fbff9bf489f0dc36c005d62f, type: 2}
+  deathSound:
+  - {fileID: 8300000, guid: e15fff933ab71b34395edef425146656, type: 3}

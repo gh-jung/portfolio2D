@@ -13,6 +13,7 @@ public class ObjectInfo : ScriptableObject
     public int demagePoint;
     public int deathPoint;
     public AnimatorOverrideController overrideController;
+    public AudioClip[] deathSound;
 
     public bool Alive
     {

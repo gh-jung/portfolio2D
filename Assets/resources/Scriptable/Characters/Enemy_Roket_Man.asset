@@ -19,3 +19,12 @@ MonoBehaviour:
   demagePoint: 10
   deathPoint: 50
   overrideController: {fileID: 22100000, guid: f0c40bc552da7584d94af6ba24ecbe87, type: 2}
+  deathSound:
+  - {fileID: 8300000, guid: 85a674fb21555594d8899ba023cb1bd7, type: 3}
+  - {fileID: 8300000, guid: e9564d9a2c004644fbf83f290a0dc72a, type: 3}
+  - {fileID: 8300000, guid: efdec3b88479a9d4397b697232784f61, type: 3}
+  - {fileID: 8300000, guid: d474a5fd3b0015c42b7bc5422127b928, type: 3}
+  - {fileID: 8300000, guid: 3b8b156c8cc7d144f8dba2719b9d296b, type: 3}
+  - {fileID: 8300000, guid: d146c0210d53f4749bc06bbec5a86e22, type: 3}
+  - {fileID: 8300000, guid: 6d71f2c49f8c7334aad7def4f23b078b, type: 3}
+  - {fileID: 8300000, guid: cd9b1d5080a49b643b1e04ba3a6ea34d, type: 3}
